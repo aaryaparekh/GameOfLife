@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Game Of Life</title>
+  <style>
+    canvas {
+      position: absolute;
+      left: 50%;
+      top: 35%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      height: 50%;
+      padding: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h1>Conway's Game of Life</h1>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="sketch.js" type="text/javascript"></script>
+  </center>
+  </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+  <h2> Cellular Automaton</h2>
+  <p> A cellular automaton is simply a grid made of cells that have two states: on or off. Given a simple set of rules, these cells can turn into relatively complex systems allowing us to simulate
+    <br>physics, computation, and biology. The most astonishing thing about cellular automaton is that certain sets of rules can be Turing-complete.
+  </p>
+
+  <p> Cellular automaton can be divided into four classifications:
+    <BR>
+  <BLOCKQUOTE>
+    1. Automata in which patterns generally stabilize into homogeneity.
+    <br>
+    2. Automata in which patterns evolve into mostly stable or oscillating structure.
+    <br>
+    3. Automate in which patterns evolve in a seemingly chaotic fashion.
+    <br>
+    4. Automata in which patterns become extremely complex and can last a long time.
+  </BLOCKQUOTE>
+  The second class can be seen above, in a simulation of Conway’s Game of Life. The fourth class is thought to be computationally universal.
+  </p>
+
+  <h2>Conway's Game of Life</h2>
+  <p> The above simulation is Conway’s Game of Life. It is a one-player game, meaning its results are entirely dependent on its starting state, and consists of the following rules:
+    <BR>
+  <BLOCKQUOTE>
+    1. Any live cell with fewer than two live neighbors dies, as if by underpopulation.
+    <br>
+    2. Any live cell with two or three live neighbors lives on to the next generation.
+    <br>
+    3. Any live cell with more than three live neighbors dies, as if by overpopulation.
+    <br>
+    4. Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
+  </BLOCKQUOTE>
+  It starts off with each cell in a random position, either 1 (black) or 0 (white). From there, it follows the four rules in order to create the next generation. It looks as though<br>
+  a random system becomes a system with static and oscillating objects. <br><br>
+  There are oscillating objects with periods of 2 (the most common) to 15 (the least common). There are also six types of gliders. These gliders are just oscillations that are of a shape<br>
+  capable of moving from one side of the board to another while still maintaining its pattern.<br><br>
+  For more information: <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Visit the Wiki page</a>.
+  </p>
+
+  <h2>Biology</h2>
+  <p> Cellular automaton can be observed in real life in the patterns of certain seashells. It can be argued, however, that our entire lives may just be a really complicated cellular automaton. If
+    <br>we can find a set of rules that dictate our lives and surroundings, we can easily (with a large enough computer) simulate our whole world.<br><br>
+    In fact, our own world can be viewed as Turing-complete since we have the ability to create Turing machines. With this in mind, we could classify our universe as the fourth classification of
+    <br> cellular automaton.
+  </p>
+
+  <h2>Greater Philosophical Implications</h2>
+  <p>Like most math, the cellular automaton has grand implications for our lives. Cellular automaton can lead to complex behavior derived from a seemingly random start. Given enough space
+    <br>(in the form of cells) and enough time, a cellular automaton can create shapes, patterns, and feedback loops.<br><br>
+    Theoretically, if we have a computer capable of simulating a cellular automaton with even a few basic rules, and allow it to run for thousands of years with an ever-expanding
+    <br>amount of cells, the possibilities are endless.
+    Of course, this is all theoretical so take it with a rather large pinch of salt. Yet, the similarities between systems of chaos that propagate into stable
+    <br> oscillations (such as the planets orbit around the Sun) in our own world and in the world
+    of cellular automaton is extremely uncanny.
+  </p>
+</body>
+
+</html>
